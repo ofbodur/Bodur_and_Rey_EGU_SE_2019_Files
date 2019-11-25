@@ -18,9 +18,9 @@ After dowloading an experiment file to the local disk or supercomputer and unarc
 		<supercomputer_mpi_format>true  </supercomputer_mpi_format>
  	</Underworld_Execution>
    
-We used 80 CPUs to run each model. They were run in Raijin Supercomputer, NCI in Canberra, Australia. 
+We used 80 CPUs to run each model. They were run in Raijin supercomputer, NCI in Canberra, Australia. 
 
-In order to run a model, one needs to submit a job file to the Supercomputer. Here is the job submission file for Raijin (submitjob.pbs):
+In order to run a model, one needs to submit a job file to the supercomputer. Here is the job submission file for Raijin (submitjob.pbs):
 
 -------------------
 
@@ -68,7 +68,7 @@ The numbers (384x96x384) indicate the number of nodes in each spatial axis.
 
 ## Post-Processing
 
-The output files are in HDF5 format and one can visualize the output by opening the following file in Paraview:
+The output files are in HDF5 format and one can visualize the output by opening the following file in ParaView:
 
 	XDMF.temporalFields.xmf
 
