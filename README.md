@@ -8,7 +8,7 @@ https://www.solid-earth-discuss.net/se-2019-73/
 
    We used **_Underworld_** code (https://github.com/OlympusMonds/EarthByte_Underworld) to numerically model the dynamic topography induced by a spherical density anomaly in the mantle. The parameters used in the numerical models are given in the paper. 
 
-The input files are provided with in-file explanations so that the readers can easily recreate the numerical models, and make their own models by changing the parameters of interest. The files in this repository are arranged by experiment names, similar to those in the papers.
+The input files are provided with in-file explanations so that the readers can easily recreate the numerical models, and make their own models by changing the parameters of interest. The files in this repository are arranged by experiment names, similar to those in the related paper.
 
 ## Running the Numerical Models
 After dowloading an experiment file to the local disk or supercomputer and unarchiving the contents (as it comes in .zip format), one needs to change the Underworld directory in _lmrStart.xml_. Please see below: 
