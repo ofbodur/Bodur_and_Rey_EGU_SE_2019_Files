@@ -1,4 +1,4 @@
-# Bodur & Rey (2019) Input Files for Underworld Geodynamic Numerical Models 
+# Bodur & Rey (2019) Input Files for Underworld Numerical Geodynamic Models 
 
 ![Figure2.jpg](Figure2.jpg)
 
