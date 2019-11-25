@@ -1,10 +1,10 @@
 # Bodur & Rey (2019) Input Files for Underworld Geodynamic Numerical Models 
-This repository includes the input files of the numerical models used for the paper entitled **"The Impact of Rheological Uncertainty on Dynamic Topography Predictions".** We used **__Underworld1__** code to numerically model the dynamic topography induced by a density anomaly in the mantle. The details of the models are given in the paper. 
+This repository includes the input files of the numerical models used for the paper entitled **"The Impact of Rheological Uncertainty on Dynamic Topography Predictions".** We used **__Underworld1__** code to numerically model the dynamic topography induced by a spherical density anomaly in the mantle. The parameters used in the numerical models are given in the paper. 
 
-The input files are provided with in-file explanations so that the readers can easily recreate the numerical models and also make their own models by changing the parameters of interest. The files in this repository are arranged by experiment numbers similar to the one in the paper. 
+The input files are provided with in-file explanations so that the readers can easily recreate the numerical models, and make their own models by changing the parameters of interest. The files in this repository are arranged by experiment names, similar to those in the papers.
 
 ## Running the Numerical Models
-After dowloading the experiments to the local disk or supercomputer, one needs to change the Underworld directory in the lmrStart.xml file of each model. Please see below: 
+After dowloading an experiment file to the local disk or supercomputer and unarchiving the contents (as it comes in .zip format), one needs to change the Underworld directory in _lmrStart.xml_. Please see below: 
 
 	<Underworld_Execution>
   	<Underworld_binary> /short/q97/software/underworld2_hdf5p/libUnderworld/build/bin/Underworld </Underworld_binary>
@@ -13,7 +13,9 @@ After dowloading the experiments to the local disk or supercomputer, one needs t
 		<supercomputer_mpi_format>true  </supercomputer_mpi_format>
  	</Underworld_Execution>
    
-We used 80 CPUs to run each model. They were run in Raijin Supercomputer, NCI in Canberra. Here is the job submission file for Raijin (submitjob.pbs):
+We used 80 CPUs to run each model. They were run in Raijin Supercomputer, NCI in Canberra, Australia. 
+
+In order to run a model, one needs to submit a job file to the Supercomputer. Here is the job submission file for Raijin (submitjob.pbs):
 
 -------------------
 
