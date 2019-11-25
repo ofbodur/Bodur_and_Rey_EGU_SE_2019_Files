@@ -1,5 +1,5 @@
 # Bodur & Rey (2019) Input Files for Underworld Geodynamic Numerical Models 
-This repository includes the input files of the numerical models used for the paper entitled "The Impact of Rheological Uncertainty on Dynamic Topography Predictions". We used Underworld code to numerically model the dynamic topography induced by a density anomaly in the mantle. The details of the models are given in the paper. 
+This repository includes the input files of the numerical models used for the paper entitled **"The Impact of Rheological Uncertainty on Dynamic Topography Predictions".** We used **__Underworld1__** code to numerically model the dynamic topography induced by a density anomaly in the mantle. The details of the models are given in the paper. 
 
 The input files are provided with in-file explanations so that the readers can easily recreate the numerical models and also make their own models by changing the parameters of interest. The files in this reposityory are arranged by experiment numbers. After dowloading the experiments to the local disk or supercomputer, one needs to change the Underworld directory in the lmrStart.xml file of each model. Please see below: 
 
