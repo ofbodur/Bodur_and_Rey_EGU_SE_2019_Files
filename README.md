@@ -1,6 +1,6 @@
 # Bodur & Rey (2019) Input Files for Underworld Geodynamic Numerical Models 
 
-![](Figure2.png)
+![](Figure2.jpg)
 
    This repository includes the input files of the numerical models in the paper entitled **_"The Impact of Rheological Uncertainty on Dynamic Topography Predictions"._** 
    
