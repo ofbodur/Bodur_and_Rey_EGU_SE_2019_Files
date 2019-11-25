@@ -82,9 +82,9 @@ Apply _Slice_ filter with Origin= (0, 0 ,0) and Normal: (0, 1, 0).
 
 Plot the dynamic topography on the surface by applying _PlotOverLine_ across the model (Point1: -1.92e+06, 0, 0 and Point2: 1.92e+06,0,0) 
 
-Please contact me via the following e-mail address in case you have any question:
+Please contact me or Patrice Rey via the following e-mail addresses in case you have any question:
 
-omer.bodur@sydney.edu.au or omer@uow.edu.au
+omer.bodur@sydney.edu.au or omer@uow.edu.au or patrice.rey@sydney.edu.au
 
 Ömer Faruk Bodur
 
