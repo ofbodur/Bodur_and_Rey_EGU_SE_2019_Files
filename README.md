@@ -1,7 +1,10 @@
 # Bodur & Rey (2019) Input Files for Underworld Geodynamic Numerical Models 
 This repository includes the input files of the numerical models used for the paper entitled **"The Impact of Rheological Uncertainty on Dynamic Topography Predictions".** We used **__Underworld1__** code to numerically model the dynamic topography induced by a density anomaly in the mantle. The details of the models are given in the paper. 
 
-The input files are provided with in-file explanations so that the readers can easily recreate the numerical models and also make their own models by changing the parameters of interest. The files in this reposityory are arranged by experiment numbers. After dowloading the experiments to the local disk or supercomputer, one needs to change the Underworld directory in the lmrStart.xml file of each model. Please see below: 
+The input files are provided with in-file explanations so that the readers can easily recreate the numerical models and also make their own models by changing the parameters of interest. The files in this repository are arranged by experiment numbers similar to the one in the paper. 
+
+## Running the Numerical Models
+After dowloading the experiments to the local disk or supercomputer, one needs to change the Underworld directory in the lmrStart.xml file of each model. Please see below: 
 
 	<Underworld_Execution>
   	<Underworld_binary> /short/q97/software/underworld2_hdf5p/libUnderworld/build/bin/Underworld </Underworld_binary>
@@ -54,6 +57,21 @@ The outputs will be created in a folder similar to the one below:
 	result_384x96x384_reference_model
 
 The numbers (384x96x384) indicate the number of nodes in each spatial axis.
+
+
+## Post-Processing
+
+The output files are in HDF5 format and one can visualize the output by opening the following file in Paraview:
+
+	XDMF.temporalFields.xmf
+
+The dynamic topography is found by applying first _CellDatatoPointData_ and then _Calculator_ filters to __XDMF.temporalFields.xmf__. In the _Calculator_ filter options, type the following to the box below the _Result Array Name_ and _Apply_  to calculate the amplitude of dynamic topography.
+
+	((StressField_4-PressureField)/(-9.8*3235))*jHat
+
+Apply _Slice_ filter with Origin= (0, 0 ,0) and Normal: (0, 1, 0). 
+
+Plot the dynamic topography on the surface by applying _PlotOverLine_ across the model (Point1: -1.92e+06, 0, 0 and Point2: 1.92e+06,0,0) 
 
 For any question:
 
